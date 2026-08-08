@@ -1,0 +1,28 @@
+{
+  "video": "data/raw_yt/E0wdFL4WsGU.mp4",
+  "video_id": "E0wdFL4WsGU",
+  "windows": 5,
+  "candidates": 4,
+  "gated_non_footage": 1,
+  "reviewed": 4,
+  "confirmed": 0,
+  "by_class": {},
+  "by_severity": {},
+  "wall_seconds": 33.0,
+  "usage": {
+    "calls": 9,
+    "prompt_tokens": 28924,
+    "completion_tokens": 6021,
+    "total_tokens": 34945,
+    "seconds": 78.49,
+    "by_model": {
+      "nvidia/nemotron-nano-12b-v2-vl": 5,
+      "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": 4
+    }
+  },
+  "models": {
+    "perception": "nvidia/nemotron-nano-12b-v2-vl",
+    "verifier": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "embeddings": "nvidia/llama-nemotron-embed-vl-1b-v2"
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "chunk_id": "pLjVBBW_g7c_0000",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A warehouse with stacked pallets, forklifts, and an American flag hanging from the ceiling, viewed from an elevated angle.",
+    "activity": "A person walks into the path of a moving forklift, which then stops abruptly.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person on foot walks into the travel path of a moving forklift, which stops abruptly to avoid collision.",
+        "evidence": "Frame 1: Person walking near forklift. Frame 2: Person closer to forklift. Frame 3: Forklift begins to stop. Frame 4: Forklift stopped, person still in path.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f01.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f02.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f03.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "pLjVBBW_g7c_0001",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 8.0,
+    "end_s": 14.35,
+    "scene": "A warehouse with stacked boxes, a forklift, and an American flag hanging from the ceiling, viewed from an elevated angle.",
+    "activity": "A person walks from the right side of the frame toward the forklift, which moves forward slightly between frames.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person walks into the path of a moving forklift. The individual is on foot, and the forklift is in motion, with the person positioned in the truck's direction of travel.",
+        "evidence": "Frame 1: Forklift stationary, person not visible. Frame 2: Forklift begins moving, person starts walking. Frame 3: Person is closer to the forklift, now in its path. The person is approximately one truck-length ahead of the forklift in Frame 3.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f01.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f02.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f03.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  }
+]

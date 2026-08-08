@@ -1,0 +1,38 @@
+[
+  {
+    "alert_id": "pLjVBBW_g7c_0000:pedestrian_in_path",
+    "chunk_id": "pLjVBBW_g7c_0000",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "type": "pedestrian_in_path",
+    "label": "Pedestrian in truck path",
+    "description": "A person on foot walks into the travel path of a moving forklift, which stops abruptly to avoid collision.",
+    "evidence": "Frame 1: Person walking near forklift. Frame 2: Person closer to forklift. Frame 3: Forklift begins to stop. Frame 4: Forklift stopped, person still in path.",
+    "vlm_confidence": 0.95,
+    "verdict": "confirmed",
+    "severity": "high",
+    "rationale": "A pedestrian is seen walking directly in the forklift's forward path, and the forklift is observed moving and then stopping abruptly, indicating the person was in imminent danger of being struck.",
+    "missing_evidence": "",
+    "standard": "29 CFR 1910.178(n)(1) - operator shall slow or stop for pedestrians",
+    "verifier_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+  },
+  {
+    "alert_id": "pLjVBBW_g7c_0001:pedestrian_in_path",
+    "chunk_id": "pLjVBBW_g7c_0001",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 8.0,
+    "end_s": 14.35,
+    "type": "pedestrian_in_path",
+    "label": "Pedestrian in truck path",
+    "description": "A person walks into the path of a moving forklift. The individual is on foot, and the forklift is in motion, with the person positioned in the truck's direction of travel.",
+    "evidence": "Frame 1: Forklift stationary, person not visible. Frame 2: Forklift begins moving, person starts walking. Frame 3: Person is closer to the forklift, now in its path. The person is approximately one truck-length ahead of the forklift in Frame 3.",
+    "vlm_confidence": 0.95,
+    "verdict": "confirmed",
+    "severity": "high",
+    "rationale": "Frames 2 and 3 show a person on foot walking into the path of a moving forklift, positioned within one truck length ahead, meeting the pedestrian_in_path criteria.",
+    "missing_evidence": "",
+    "standard": "29 CFR 1910.178(n)(1) - operator shall slow or stop for pedestrians",
+    "verifier_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+  }
+]

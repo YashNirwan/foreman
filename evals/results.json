@@ -1,0 +1,1244 @@
+{
+  "meta": {
+    "chunks": 49,
+    "positive_chunks": 10,
+    "positive_events": 10,
+    "candidates_raised": 53,
+    "perception_parse_errors": 0,
+    "windows_gated_non_footage": 7,
+    "vlm_primary": "nvidia/nemotron-nano-12b-v2-vl",
+    "verifier_vlm": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "verifier_llm": "nvidia/nemotron-3-super-120b-a12b",
+    "usage_before_arms": {
+      "calls": 0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "seconds": 0.0,
+      "by_model": {
+        "nvidia/nemotron-3-super-120b-a12b": 53,
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": 106
+      }
+    },
+    "usage_total": {
+      "calls": 159,
+      "prompt_tokens": 354518,
+      "completion_tokens": 163363,
+      "total_tokens": 517881,
+      "seconds": 1505.75,
+      "by_model": {
+        "nvidia/nemotron-3-super-120b-a12b": 53,
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": 106
+      }
+    }
+  },
+  "arms": {
+    "vlm_only": {
+      "tp": 8,
+      "fp": 45,
+      "fn": 2,
+      "precision": 0.151,
+      "recall": 0.8,
+      "f1": 0.254,
+      "false_alarm_window_rate": 0.769,
+      "false_alarm_windows": 30,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 34,
+        "mixed": 11
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0001",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0001",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0002",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0001",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0006",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0008",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0012",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0078",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0030",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0042",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "blocked_egress",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0066",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0072",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        }
+      ]
+    },
+    "vlm_conf_60": {
+      "tp": 8,
+      "fp": 37,
+      "fn": 2,
+      "precision": 0.178,
+      "recall": 0.8,
+      "f1": 0.291,
+      "false_alarm_window_rate": 0.718,
+      "false_alarm_windows": 28,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 26,
+        "mixed": 11
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0002",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0001",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0006",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0008",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0012",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0078",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0030",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0042",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0066",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0072",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        }
+      ]
+    },
+    "vlm_conf_80": {
+      "tp": 8,
+      "fp": 36,
+      "fn": 2,
+      "precision": 0.182,
+      "recall": 0.8,
+      "f1": 0.296,
+      "false_alarm_window_rate": 0.718,
+      "false_alarm_windows": 28,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 25,
+        "mixed": 11
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0002",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0001",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0006",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0008",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0012",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0078",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0030",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0042",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0066",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0072",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        }
+      ]
+    },
+    "scene_gate": {
+      "tp": 8,
+      "fp": 45,
+      "fn": 2,
+      "precision": 0.151,
+      "recall": 0.8,
+      "f1": 0.254,
+      "false_alarm_window_rate": 0.769,
+      "false_alarm_windows": 30,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 34,
+        "mixed": 11
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0001",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0001",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0002",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "E0wdFL4WsGU_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0001",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0006",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0008",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0012",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0078",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0018",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0030",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0042",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "blocked_egress",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0066",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0072",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        }
+      ]
+    },
+    "llm_verifier": {
+      "tp": 3,
+      "fp": 18,
+      "fn": 7,
+      "precision": 0.143,
+      "recall": 0.3,
+      "f1": 0.194,
+      "false_alarm_window_rate": 0.308,
+      "false_alarm_windows": 12,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "mixed": 5,
+        "footage": 13
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0003",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "pLjVBBW_g7c_0001",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "nK6UGe1FwCI_0002",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0006",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "E0wdFL4WsGU_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0010",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0018",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "blocked_egress",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0066",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        }
+      ],
+      "wall_seconds": 128.9
+    },
+    "vlm_verifier": {
+      "tp": 6,
+      "fp": 11,
+      "fn": 4,
+      "precision": 0.353,
+      "recall": 0.6,
+      "f1": 0.444,
+      "false_alarm_window_rate": 0.256,
+      "false_alarm_windows": 10,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 8,
+        "mixed": 3
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "nK6UGe1FwCI_0001",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0006",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0012",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0072",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        }
+      ],
+      "wall_seconds": 79.4
+    },
+    "vlm_verifier_nogate": {
+      "tp": 5,
+      "fp": 13,
+      "fn": 5,
+      "precision": 0.278,
+      "recall": 0.5,
+      "f1": 0.357,
+      "false_alarm_window_rate": 0.308,
+      "false_alarm_windows": 12,
+      "clean_windows": 39,
+      "fp_by_scene_type": {
+        "footage": 10,
+        "mixed": 3
+      },
+      "false_negatives": [
+        {
+          "chunk_id": "N4OQFi4UrR4_0001",
+          "class": "unsafe_load"
+        },
+        {
+          "chunk_id": "pLjVBBW_g7c_0001",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "nK6UGe1FwCI_0001",
+          "class": "pedestrian_in_path"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0030",
+          "class": "missing_ppe"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0048",
+          "class": "missing_ppe"
+        }
+      ],
+      "false_positives": [
+        {
+          "chunk_id": "N4OQFi4UrR4_0000",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0000",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0002",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0004",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "MqvOjo62BHQ_0014",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0054",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "fz9Q7-7l-40_0060",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0006",
+          "class": "missing_ppe",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0024",
+          "class": "missing_ppe",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0036",
+          "class": "pedestrian_in_path",
+          "scene_type": "mixed"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0042",
+          "class": "pedestrian_in_path",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0060",
+          "class": "unsafe_load",
+          "scene_type": "footage"
+        },
+        {
+          "chunk_id": "4p2vg_IbmKY_0078",
+          "class": "unsafe_operation",
+          "scene_type": "footage"
+        }
+      ],
+      "wall_seconds": 63.2
+    }
+  }
+}

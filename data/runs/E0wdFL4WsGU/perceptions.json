@@ -1,0 +1,139 @@
+[
+  {
+    "chunk_id": "E0wdFL4WsGU_0000",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A black background with white text describing warehouse pedestrian safety protocols.",
+    "activity": "The text changes across the frames, emphasizing different safety messages.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 0,
+    "truck_present": false,
+    "truck_moving": false,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0001",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "scene": "An indoor warehouse with a person operating a yellow forklift in a spacious area with gray walls, an open door, and safety banners on the wall.",
+    "activity": "The forklift operator raises the forks and then lowers them back to the ground.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift operator raises the forks while the truck is stationary, but there is no evidence of travel with forks elevated, visible tilt, or obstruction of the operator's view.",
+        "evidence": "Frame 1: Forks are lowered. Frame 2: Forks are raised. Frame 3: Forks remain raised. Frame 4: Forks are lowered. No movement of the truck is observed during the frames.",
+        "confidence": 0.0
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0002",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "scene": "An indoor warehouse with a yellow forklift in the center, a person operating it, and an open doorway leading to another area. The floor is white and reflective, and there are chairs and a desk in the background.",
+    "activity": "The forklift operator raises the forks, lifts a load, and then lowers it back to the ground.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift operator raises the forks with a load, which is visibly unstable and overhangs the forks, potentially obstructing the operator's view.",
+        "evidence": "In frames 2-4, the forks are raised with a load that is not centered, causing it to tilt and overhang. The operator's view is partially obstructed by the load.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0003",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 24.0,
+    "end_s": 32.0,
+    "scene": "An indoor warehouse setting with a forklift operator driving a yellow CAT forklift. The operator is wearing a black shirt and a face mask. A woman in a dark jacket and jeans is walking in the background. The warehouse has gray walls, a white floor, and various signs and equipment in the background.",
+    "activity": "The forklift operator is driving the forklift while the woman walks past the vehicle. The forklift remains stationary throughout the sequence.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A woman in a dark jacket and jeans is walking in the path of a stationary forklift. The forklift is not moving, but the woman is walking close to it.",
+        "evidence": "Frame 1: The woman is walking towards the forklift. Frame 2: The woman continues walking past the forklift. Frame 3: The woman is closer to the forklift. Frame 4: The woman is walking away from the forklift.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0004",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 32.0,
+    "end_s": 38.38,
+    "scene": "An indoor warehouse with a forklift operator driving a yellow forklift, a pedestrian walking in the background, and safety signage on the walls.",
+    "activity": "A pedestrian walks from the background toward the forklift's path as the forklift moves forward.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A pedestrian is walking into the path of a moving forklift. The pedestrian is behind the forklift in the first frame and moves closer to the forklift's front in the second frame, entering the truck's path by the third frame.",
+        "evidence": "In frame 1, the pedestrian is behind the forklift. In frame 2, the pedestrian is closer to the forklift's front. In frame 3, the pedestrian is in the forklift's path. The forklift is moving forward, and the pedestrian is walking toward the truck's direction of travel.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f03.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  }
+]

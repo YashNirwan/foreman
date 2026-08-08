@@ -1,0 +1,27 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.playwright-mcp/
+.DS_Store
+
+# Source footage and anything derived that reproduces it frame for frame is never
+# committed. This repo ships the analysis, not the video: see DATA.md. Run
+# scripts/fetch_data.py to rebuild the local copy.
+data/raw/
+data/raw_yt/
+data/chunks/
+data/clips/
+data/frames/
+data/runs/**/clips/
+*.mp4
+*.webm
+*.mkv
+
+# Kept deliberately (text-only derived artifacts, needed to reproduce the eval):
+!data/runs/**/summary.json
+!data/runs/**/perceptions.json
+!data/runs/**/alerts.json
+*.egg-info/
+build/
+dist/

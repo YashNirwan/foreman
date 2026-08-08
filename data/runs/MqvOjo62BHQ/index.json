@@ -1,0 +1,238 @@
+[
+  {
+    "chunk_id": "MqvOjo62BHQ_0000",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "caption": "An outdoor warehouse area with a forklift and stacked pallets, viewed from a fixed camera angle. A person on foot approaches the forklift's path, and the forklift begins to move forward. pedestrian_in_path: A person in a high-visibility vest walks into the path of a moving forklift, which is too close for the forklift to stop safely.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0001",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "caption": "A warehouse loading area with a yellow forklift, stacks of pallets, and a group of workers gathered near the forklift. A man sits on the ground while a woman assists him, followed by the forklift operator driving away. missing_ppe: A man sitting on the ground is not wearing a high-visibility vest, and a woman is assisting him without one either. pedestrian_in_path: A man is sitting on the ground in the path of the forklift, which is moving away from him.",
+    "hazards": [
+      "missing_ppe",
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0002",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "caption": "An aerial view of a warehouse aisle with a yellow forklift moving along a concrete path adjacent to a white building. The forklift moves forward, and a person on foot enters the aisle from the right side, approaching the forklift's path. pedestrian_in_path: A person on foot is walking into the travel path of a moving forklift, positioned close enough that the forklift could not stop short of them.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0003",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 24.0,
+    "end_s": 32.0,
+    "caption": "A warehouse interior with a concrete floor, stacks of materials on the left, and a forklift in the right foreground. The camera captures two workers sweeping near the stacks and a forklift operator driving towards them. Two workers sweep the floor while a forklift operator drives towards them, changing their relative positions across the frames. pedestrian_in_path: The forklift operator is driving towards the two workers who are sweeping near the stacks. The workers are within the forklift's path of travel and close enough that the forklift could not stop short of them.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0004",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 32.0,
+    "end_s": 40.0,
+    "caption": "A warehouse interior with a concrete floor, wooden walls, and stacks of materials on pallets. A forklift is visible in the background, and workers are present in the foreground. A woman in a yellow vest walks across the frame while a man in an orange vest stands nearby. A forklift moves from the background into the foreground. pedestrian_in_path: A woman in a yellow vest walks in front of a moving forklift. The forklift is traveling from the background to the foreground, and the woman is positioned approximately one truck-length ahead of it, in its path.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0005",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 40.0,
+    "end_s": 48.0,
+    "caption": "A warehouse interior with a concrete floor and wooden panel walls, viewed from a fixed camera angle capturing a forklift and a pedestrian in the same area. A pedestrian in an orange safety vest walks from the left side of the frame toward the right, approaching a yellow forklift that is moving forward. The forklift operator remains seated and focused on driving. pedestrian_in_path: A pedestrian in an orange safety vest walks directly into the path of a moving forklift. The pedestrian is on foot and close enough to the forklift's direction of travel that the vehicle could not stop short of them.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0006",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 48.0,
+    "end_s": 56.0,
+    "caption": "An indoor warehouse with a concrete floor and wooden walls, where a yellow forklift is being operated by a person wearing a high-visibility vest. A second individual is standing nearby, observing the forklift's movement. A person in a high-visibility vest walks from the left side of the frame towards the forklift, which is moving forward. The forklift operator remains stationary while the pedestrian approaches. pedestrian_in_path: A pedestrian wearing a high-visibility vest is walking directly into the path of a moving forklift. The pedestrian is positioned to the left of the forklift's direction of travel and is within a distance that the forklift could not stop short of them.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0007",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 56.0,
+    "end_s": 64.0,
+    "caption": "A warehouse aisle with shelving units stocked with materials and a forklift in operation. A person is seen walking in front of a moving forklift, which then stops to avoid a collision. pedestrian_in_path: A person on foot is walking in the path of a moving forklift, which stops to prevent a collision.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0008",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 64.0,
+    "end_s": 72.0,
+    "caption": "A warehouse with orange shelving units stacked with white bags, a yellow forklift, and a worker in a high-visibility vest walking near the forklift. A worker walks from the left side of the frame toward the forklift, which is stationary with its forks raised, and then bends down to pick up a cardboard box. pedestrian_in_path: The worker is walking in the path of the forklift, which is stationary but could move forward. The worker is approximately one truck-length away from the forklift's front and is moving closer to it.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0009",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 72.0,
+    "end_s": 80.0,
+    "caption": "A warehouse aisle with shelving units stacked with white bags, a yellow forklift, and a person in a safety vest standing near the forklift. A person in a safety vest walks from the left side of the aisle toward the forklift, which remains stationary throughout the sequence. pedestrian_in_path: A person in a safety vest walks into the path of a stationary forklift. The person is on foot, and the forklift is in the same frame, with the person moving toward the truck's front.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0010",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 80.0,
+    "end_s": 88.0,
+    "caption": "A warehouse aisle with shelving units and pallets stacked with materials. The camera angle is fixed, capturing the aisle from a side perspective. A person is seen walking towards a forklift that is stationary in the aisle. The forklift then begins to move forward, and the person continues walking in its path. pedestrian_in_path: A person on foot is walking towards a stationary forklift, which then starts moving forward. The person is in the truck's direction of travel and close enough that the truck could not stop short of them.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0011",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 88.0,
+    "end_s": 96.0,
+    "caption": "A yellow forklift is parked in a gravel area with a group of people standing nearby, and a warehouse with stacked pallets is visible in the background. A man in a black shirt and khaki pants walks towards the forklift, interacts with the operator, and then moves away from the vehicle. pedestrian_in_path: A man in a black shirt and khaki pants walks towards the forklift, placing himself in the vehicle's path.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0012",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 96.0,
+    "end_s": 104.0,
+    "caption": "A warehouse loading dock with a yellow forklift moving on a concrete surface, surrounded by stacked pallets and containers. The camera captures the forklift's movement and the operator's actions. The forklift moves forward, and the operator adjusts the load on the forks. Two pedestrians are visible near the forklift, and the operator's actions change across the frames. pedestrian_in_path: Two pedestrians are standing near the forklift's path. One is closer to the forklift's front, and the other is slightly behind. The forklift is moving towards them, and the distance between the forklift and the pedestrians decreases across the frames. missing_ppe: One pedestrian is wearing a high-visibility vest, but the other is not. The pedestrian without the vest is standing near the forklift's path. unsafe_operation: The forklift operator is raising the forks while the truck is moving, which is unsafe.",
+    "hazards": [
+      "pedestrian_in_path",
+      "missing_ppe",
+      "unsafe_operation"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0013",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 104.0,
+    "end_s": 112.0,
+    "caption": "A gravel area with a forklift and several people around it, with trees and shrubbery in the background. People are interacting with a forklift, with some standing on it and others nearby, and a man in a yellow shirt and a woman in high-visibility clothing walk into the frame. unsafe_operation: A person is standing on the forks of the forklift, which is a violation of safety protocols. missing_ppe: A person is standing on the forklift without wearing high-visibility clothing or a hard hat. pedestrian_in_path: A person is walking in front of the forklift, which is a potential hazard if the forklift were to move.",
+    "hazards": [
+      "unsafe_operation",
+      "missing_ppe",
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0014",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 112.0,
+    "end_s": 120.0,
+    "caption": "A warehouse setting with stacks of materials and a person adjusting a safety vest. A person is seen putting on a high-visibility vest in front of stacked materials. missing_ppe: A person in an active operating area without required high-visibility clothing or head protection.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0015",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 120.0,
+    "end_s": 128.0,
+    "caption": "A warehouse interior with stacks of large white bags on pallets, and industrial equipment visible in the background. The camera angle is at eye level, capturing a person in a high-visibility vest walking past the stacks. A person in a high-visibility vest walks from the left side of the frame towards the right, passing by stacks of white bags. The person's movement is the primary change across the frames. missing_ppe: The person is in an active operating area without a hard hat, which is required for safety in this environment.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0016",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 128.0,
+    "end_s": 136.0,
+    "caption": "A woman in a high-visibility vest is seen in an industrial setting, initially standing near machinery and later walking outdoors with a man in a neon shirt. The woman transitions from inspecting equipment indoors to walking outdoors with a man, both wearing safety gear. missing_ppe: The woman is not wearing a hard hat while inspecting machinery indoors.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0017",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 136.0,
+    "end_s": 144.0,
+    "caption": "A warehouse interior with a forklift parked near shelving units loaded with materials, and a person standing in the foreground. The person in the foreground moves slightly between frames, but remains stationary relative to the forklift's path. missing_ppe: The person in the foreground is not wearing high-visibility clothing or a hard hat while standing in an area with operating equipment.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0018",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 144.0,
+    "end_s": 152.0,
+    "caption": "A warehouse interior with a yellow forklift, shelving units loaded with materials, and a person standing in the foreground. The person in the foreground moves slightly between frames, adjusting their stance while remaining in the same general area. missing_ppe: The person is not wearing a hard hat or high-visibility vest while standing in an area with active equipment.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0019",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 152.0,
+    "end_s": 160.0,
+    "caption": "A man stands in a warehouse with a yellow forklift and shelving units loaded with materials in the background. The man shifts his stance slightly between frames, but no significant movement occurs in the warehouse environment. missing_ppe: The man is not wearing a hard hat or high-visibility vest while standing in an area with operating equipment.",
+    "hazards": [
+      "missing_ppe"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0020",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 160.0,
+    "end_s": 168.0,
+    "caption": "A warehouse interior with a yellow forklift parked near shelving units loaded with white bags, and a person standing in the foreground. A person walks from the right side of the frame toward the forklift, which remains stationary throughout the sequence. pedestrian_in_path: A person on foot walks toward the stationary forklift, entering its travel path. The person is approximately 3 truck-lengths away from the forklift's front in the final frame.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  }
+]

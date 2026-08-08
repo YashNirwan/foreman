@@ -1,0 +1,24 @@
+[
+  {
+    "chunk_id": "pLjVBBW_g7c_0000",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "caption": "A warehouse with stacked pallets, forklifts, and an American flag hanging from the ceiling, viewed from an elevated angle. A person walks into the path of a moving forklift, which then stops abruptly. pedestrian_in_path: A person on foot walks into the travel path of a moving forklift, which stops abruptly to avoid collision.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "pLjVBBW_g7c_0001",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 8.0,
+    "end_s": 14.35,
+    "caption": "A warehouse with stacked boxes, a forklift, and an American flag hanging from the ceiling, viewed from an elevated angle. A person walks from the right side of the frame toward the forklift, which moves forward slightly between frames. pedestrian_in_path: A person walks into the path of a moving forklift. The individual is on foot, and the forklift is in motion, with the person positioned in the truck's direction of travel.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  }
+]

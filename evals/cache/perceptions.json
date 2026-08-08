@@ -1,0 +1,1433 @@
+[
+  {
+    "chunk_id": "E0wdFL4WsGU_0000",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A black background with white text describing warehouse safety topics.",
+    "activity": "Text slides transition from one safety topic to another, including warehouse pedestrian safety and passing in front of a forklift.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 0,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0001",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "scene": "A warehouse interior with a person operating a yellow forklift in a spacious area with gray walls, white flooring, and visible safety signage.",
+    "activity": "The forklift operator raises the forks and then lowers them back to the ground in a controlled manner.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift operator raises the forks while the truck is stationary, but there is no evidence of travel with elevated forks or obstruction of the operator's view.",
+        "evidence": "Frame 1: Forks are lowered. Frame 2: Forks are raised. Frame 3: Forks remain raised. Frame 4: Forks are lowered. No movement with elevated forks observed.",
+        "confidence": 0.0
+      },
+      {
+        "type": "unsafe_operation",
+        "description": "The operator is alone on the forklift, and there is no evidence of an unauthorized rider, person under raised forks, or unattended running truck.",
+        "evidence": "All frames show only the operator on the forklift. No other individuals are present on or near the forklift.",
+        "confidence": 0.0
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0001/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0002",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "scene": "A warehouse aisle with a forklift operator driving a yellow forklift, with posters on the wall indicating 'Dealer of Excellence' for 2018 and 2019, and an exit door visible in the background.",
+    "activity": "The forklift operator is seen raising the forks and then lowering them back down to the ground.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift operator raises the forks while the truck is moving, which could obstruct the operator's view and potentially create an unstable load situation.",
+        "evidence": "In frames 2 and 3, the forks are raised while the truck is in motion. The operator's view is not obstructed, but the load is elevated, which is a safety concern.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0002/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0003",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 24.0,
+    "end_s": 32.0,
+    "scene": "An indoor warehouse with a forklift operator driving a yellow CAT forklift, and a woman walking in the background.",
+    "activity": "The forklift operator drives the forklift forward while the woman walks from the right side of the frame towards the left.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A woman is walking in the path of a moving forklift. The forklift is moving forward, and the woman is walking from the right side of the frame towards the left, directly in the forklift's path.",
+        "evidence": "Frames 1-4 show the woman walking from the right side of the frame towards the left, directly in the path of the moving forklift. The forklift is moving forward, and the woman is walking towards it.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f03.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0003/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0004",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 32.0,
+    "end_s": 38.38,
+    "scene": "An indoor warehouse with a forklift operator driving a yellow forklift, a pedestrian walking in the background, and safety signage on the walls.",
+    "activity": "A pedestrian walks from the background toward the forklift's path as the forklift moves forward.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A pedestrian is walking into the path of a moving forklift. The pedestrian is in the truck's direction of travel and close enough that the truck could not stop short of them.",
+        "evidence": "Frame 1: Pedestrian is in the background, not in the truck's path. Frame 2: Pedestrian is closer to the truck's path. Frame 3: Pedestrian is directly in the truck's path. The truck is moving forward in all frames.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f01.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f02.jpg",
+      "data/chunks/E0wdFL4WsGU/E0wdFL4WsGU_0004/f03.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "N4OQFi4UrR4_0000",
+    "video_id": "N4OQFi4UrR4",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A warehouse aisle with shelving on both sides, a forklift moving along the aisle, and a person walking in the vicinity of the forklift.",
+    "activity": "A forklift is seen moving through a warehouse aisle, carrying a load, while a person walks in the path of the forklift.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person is walking in the path of a moving forklift, which is carrying a load. The person is close to the forklift's path and in its direction of travel.",
+        "evidence": "In frame 1, the forklift is stationary with a person walking nearby. By frame 2, the forklift is in motion, and the person is in its path. The forklift continues to move towards the person in frames 3 and 4.",
+        "confidence": 0.95
+      },
+      {
+        "type": "unsafe_load",
+        "description": "The forklift is carrying a load that is visibly unstable and overhanging, which could pose a risk of falling.",
+        "evidence": "In frame 4, the load on the forklift's forks is visibly unstable and overhanging, with part of the load extending beyond the forks.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0000/f01.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0000/f02.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0000/f03.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "N4OQFi4UrR4_0001",
+    "video_id": "N4OQFi4UrR4",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "scene": "A warehouse aisle with shelving on both sides, a forklift in the center, and a person standing near the shelving. The camera angle is from above, looking down the aisle.",
+    "activity": "A forklift moves forward, carrying a load that becomes unstable and falls to the ground. A person reacts by moving away from the falling load.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift carries a load that becomes unstable and falls to the ground while the truck is moving. The load is visibly overhanging and obstructs the operator's view.",
+        "evidence": "Frame 1: Forklift with load raised. Frame 2: Load begins to tilt. Frame 3: Load falls to the ground. Frame 4: Load is on the floor, obstructing the aisle.",
+        "confidence": 0.95
+      },
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person is standing near the shelving, close to the forklift's path. As the forklift moves forward, the person is in the truck's direction of travel and close enough that the truck could not stop short of them.",
+        "evidence": "Frame 1: Person standing near shelving. Frame 2: Forklift moves forward, person remains in path. Frame 3: Forklift continues, person still in path. Frame 4: Person moves away after load falls.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0001/f01.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0001/f02.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0001/f03.jpg",
+      "data/chunks/N4OQFi4UrR4/N4OQFi4UrR4_0001/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "pLjVBBW_g7c_0000",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A warehouse with stacked pallets, forklifts, and an American flag hanging from the ceiling, viewed from an elevated angle.",
+    "activity": "A person walks from the left side of the frame toward the center, passing near a moving forklift that changes direction mid-sequence.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person walks directly into the path of a moving forklift, which is traveling toward them and does not stop short.",
+        "evidence": "Frame 1: Person is 3 truck-lengths away from the forklift. Frame 2: Person is 1.5 truck-lengths away. Frame 3: Person is 0.5 truck-lengths away. Frame 4: Person is in the forklift's path. The forklift moves forward in all frames.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f01.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f02.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f03.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "pLjVBBW_g7c_0001",
+    "video_id": "pLjVBBW_g7c",
+    "start_s": 8.0,
+    "end_s": 14.35,
+    "scene": "A warehouse with stacked boxes, a forklift, and an American flag hanging from the ceiling, viewed from an elevated angle.",
+    "activity": "A person walks from the right side of the frame toward the forklift, which remains stationary throughout the sequence.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person walks directly into the path of a stationary forklift, which does not move despite the person's approach.",
+        "evidence": "Frame 1: Person is 3 truck-lengths away from the forklift. Frame 2: Person is 1.5 truck-lengths away. Frame 3: Person is 0.5 truck-lengths away, with the forklift still stationary. The person is walking toward the forklift's front, where the operator's visibility is limited.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f01.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f02.jpg",
+      "data/chunks/pLjVBBW_g7c/pLjVBBW_g7c_0001/f03.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "nK6UGe1FwCI_0000",
+    "video_id": "nK6UGe1FwCI",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A first-person view from inside a forklift, showing the vehicle's interior and the warehouse aisle ahead, with storage racks on either side.",
+    "activity": "The forklift remains stationary throughout the sequence, with no movement or change in the operator's position or the load on the forks.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 0,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0000/f01.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0000/f02.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0000/f03.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "nK6UGe1FwCI_0001",
+    "video_id": "nK6UGe1FwCI",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "scene": "A warehouse aisle viewed from the perspective of a forklift operator, showing the aisle ahead with storage racks on either side and a blue light on the forklift's overhead guard.",
+    "activity": "The forklift moves forward, and two pedestrians appear in the aisle ahead, walking across the path of the forklift.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "Two pedestrians are walking across the aisle in front of the moving forklift, positioned close enough that the forklift could not stop short of them.",
+        "evidence": "In frames 3 and 4, two individuals are visible walking across the aisle in the path of the forklift. They are approximately one truck-length ahead of the forklift in frame 3, and closer in frame 4, indicating they are in the truck's path.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0001/f01.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0001/f02.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0001/f03.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0001/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "nK6UGe1FwCI_0002",
+    "video_id": "nK6UGe1FwCI",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "scene": "A warehouse interior viewed from the perspective of a forklift, showing aisles, shelving units, and workers in the distance.",
+    "activity": "A person in a blue shirt walks from the left side of the frame toward the center, passing near the forklift's path.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 3,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person in a blue shirt walks directly into the path of a stationary forklift. The individual is approximately two truck-lengths away from the forklift's front, moving toward it.",
+        "evidence": "Frame 1: Person in blue shirt is near the left edge, facing the forklift. Frame 2: Person moves closer to the center, aligning with the forklift's path. Frame 3: Person is midway between the forklift and the background. Frame 4: Person is closer to the forklift, still in its path.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0002/f01.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0002/f02.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0002/f03.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0002/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "nK6UGe1FwCI_0003",
+    "video_id": "nK6UGe1FwCI",
+    "start_s": 24.0,
+    "end_s": 28.42,
+    "scene": "A black background with text describing forklift safety principles.",
+    "activity": "The text changes from a number 7 to the title 'WireCrafters Forklift Safety'.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 0,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0003/f01.jpg",
+      "data/chunks/nK6UGe1FwCI/nK6UGe1FwCI_0003/f02.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0000",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "An outdoor warehouse area with a forklift and stacked pallets, viewed from a fixed camera angle.",
+    "activity": "A person on foot approaches the forklift's path, and another person interacts with the forklift operator.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 3,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person in a high-visibility vest walks towards the forklift's path, standing close to the truck's front, with the truck's direction of travel towards them.",
+        "evidence": "In frames 2 and 3, the pedestrian is within one truck-length of the forklift's front, facing the direction of travel. The forklift remains stationary, but the pedestrian's proximity increases.",
+        "confidence": 0.9
+      },
+      {
+        "type": "missing_ppe",
+        "description": "A person without a hard hat stands near the forklift, interacting with the operator.",
+        "evidence": "In frame 4, the person standing near the forklift is not wearing a hard hat, and is within the active operating area.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0000/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0000/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0000/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0002",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "scene": "An aerial view of a warehouse aisle with a yellow forklift moving along a concrete path adjacent to a white building.",
+    "activity": "The forklift moves forward, and a person in high-visibility clothing appears near the forklift's path.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person in high-visibility clothing is walking in the path of a moving forklift, positioned close to the truck's front and in its direction of travel.",
+        "evidence": "In frame 2, the person is visible near the forklift's path, and by frame 4, they are closer to the truck, indicating they are walking into the truck's path.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0002/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0002/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0002/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0002/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0004",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 32.0,
+    "end_s": 40.0,
+    "scene": "A warehouse interior with a concrete floor, wooden walls, and stacks of materials on pallets. A forklift is visible in the background, and workers are present in the foreground.",
+    "activity": "A woman in a yellow vest walks across the frame while a man in an orange vest stands nearby. A forklift moves from the background into the foreground.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 3,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A woman in a yellow vest walks in front of a moving forklift. The forklift is traveling from the background to the foreground, and the woman is positioned in its path.",
+        "evidence": "Frame 1: Woman points towards the forklift. Frame 2: Forklift begins moving. Frame 3: Woman walks towards the forklift. Frame 4: Forklift is closer to the woman. The woman is approximately 2 truck-lengths ahead of the forklift in Frame 3, reducing to 1 truck-length in Frame 4.",
+        "confidence": 0.95
+      },
+      {
+        "type": "missing_ppe",
+        "description": "A man in an orange vest is standing without a hard hat in an area where the forklift is operating.",
+        "evidence": "Frame 2: Man in orange vest is visible without head protection. Frame 3: Man remains in the forklift's path without a hard hat.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0004/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0004/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0004/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0004/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0006",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 48.0,
+    "end_s": 56.0,
+    "scene": "An indoor warehouse with a concrete floor and wooden walls, where a yellow forklift is being operated by a person wearing a high-visibility vest. A pedestrian is standing in the background, and the forklift is moving across the frame.",
+    "activity": "A forklift is being driven across the warehouse floor, with a pedestrian standing in the background. The forklift's movement changes across the frames, and the pedestrian's position relative to the forklift shifts slightly.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A pedestrian is standing in the path of a moving forklift. The pedestrian is wearing a high-visibility vest and is positioned in the forklift's direction of travel, close enough that the forklift could not stop short of them.",
+        "evidence": "In frame 1, the pedestrian is standing in the background, and the forklift is moving towards them. The distance between the pedestrian and the forklift is less than one truck length, and the forklift is moving at a speed that would not allow it to stop in time to avoid the pedestrian.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0006/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0006/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0006/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0006/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0008",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 64.0,
+    "end_s": 72.0,
+    "scene": "A warehouse with orange shelving units stacked with white bags, a yellow forklift, and a worker in a high-visibility vest walking near the forklift.",
+    "activity": "A worker walks from the left side of the frame toward a cardboard box on the floor, while a forklift remains stationary in the right side of the frame.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A worker in a high-visibility vest walks toward a cardboard box on the floor, with a stationary forklift positioned to their right. The worker is within the forklift's potential travel path.",
+        "evidence": "Frame 1: Worker walking left to right, forklift stationary on the right. Frame 2: Worker closer to the box, forklift still stationary. Frame 3: Worker crouches near the box, forklift remains stationary. Frame 4: Forklift lifts a pallet, worker still near the box. The worker is within 2 truck-lengths of the forklift's front and in its potential path.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0008/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0008/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0008/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0008/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0010",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 80.0,
+    "end_s": 88.0,
+    "scene": "A warehouse aisle with shelving units and pallets stacked with materials. The camera angle is fixed, capturing the aisle from a side perspective.",
+    "activity": "A person is seen walking towards a forklift that is moving in the aisle, followed by a group of people running away from the forklift as it approaches.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 5,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person on foot is walking towards the moving forklift, which is in the process of traveling down the aisle. The person is close enough that the forklift could not stop short of them.",
+        "evidence": "In frame 1, the person's foot is visible near the forklift's path. By frame 2, the person is closer to the forklift, and in frame 3, the person is directly in the path of the forklift. The forklift's movement towards the person is evident across the frames.",
+        "confidence": 0.95
+      },
+      {
+        "type": "unsafe_operation",
+        "description": "A person is seen riding on the forks of the forklift as it moves, which is an unsafe operation.",
+        "evidence": "In frame 3, a person is clearly visible riding on the forks of the forklift. The forklift is in motion, and the person is not secured, posing a significant safety risk.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0010/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0010/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0010/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0010/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0012",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 96.0,
+    "end_s": 104.0,
+    "scene": "A warehouse loading dock with a yellow forklift moving on a concrete surface, surrounded by stacked pallets and containers.",
+    "activity": "The forklift moves forward, and the operator appears to be interacting with two workers standing near the warehouse entrance.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 3,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "Two workers are standing near the forklift's path of travel, close enough that the forklift could not stop short of them.",
+        "evidence": "Frames 1-3 show the forklift moving toward the workers who are standing within the truck's path. The workers are approximately 1 truck-length away from the forklift's front in frame 1, reducing to less than 1 truck-length by frame 3.",
+        "confidence": 0.95
+      },
+      {
+        "type": "missing_ppe",
+        "description": "One worker is not wearing a high-visibility vest while standing in the active operating area near the forklift.",
+        "evidence": "In frame 2, one worker is clearly visible without a high-visibility vest while standing near the forklift's path. The other worker is wearing a high-visibility vest.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0012/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0012/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0012/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0012/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "MqvOjo62BHQ_0014",
+    "video_id": "MqvOjo62BHQ",
+    "start_s": 112.0,
+    "end_s": 120.0,
+    "scene": "A warehouse setting with stacks of materials and a person in the foreground.",
+    "activity": "A person is seen putting on a high-visibility vest in front of stacked materials.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A person in an active operating area without required high-visibility clothing or head protection.",
+        "evidence": "In frames 2-4, the person is handling a high-visibility vest but is not wearing it while in the warehouse area. The person is standing in front of stacked materials, which suggests an active operating area.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0014/f01.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0014/f02.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0014/f03.jpg",
+      "data/chunks/MqvOjo62BHQ/MqvOjo62BHQ_0014/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0000",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A static slide with text on a plain background, no real-world setting or movement depicted.",
+    "activity": "No change in activity across frames; all frames are identical static text slides.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 0,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0000/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0000/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0000/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0006",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 48.0,
+    "end_s": 56.0,
+    "scene": "A warehouse aisle with shelving units on both sides, a pedestrian walking in the background, and a forklift partially visible on the right side of the frame.",
+    "activity": "A pedestrian in a high-visibility vest walks from the background towards the foreground, passing by a stationary forklift. The pedestrian's movement changes across the frames, indicating motion towards the camera.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A pedestrian wearing a high-visibility vest and hard hat walks in the path of a stationary forklift. The pedestrian is in the truck's direction of travel and close enough that the truck could not stop short of them.",
+        "evidence": "In frames 1-4, the pedestrian is seen walking from the background towards the foreground, passing by the stationary forklift. The pedestrian is within the truck's path and close enough that the truck could not stop short of them.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0006/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0006/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0006/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0006/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0012",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 96.0,
+    "end_s": 104.0,
+    "scene": "A warehouse aisle with shelving units on either side, viewed from a fixed camera angle. The operator is centered in the frame, facing forward.",
+    "activity": "The forklift operator turns their head to the right, then back to the front, while the forks remain stationary. No other movement is observed.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "The operator is wearing a yellow hard hat and high-visibility vest, but the vest lacks reflective stripes required for night operations. No other personnel are visible.",
+        "evidence": "All frames show the operator's upper body. The vest's reflective stripes are absent in frames 1-4. No other individuals are present.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0012/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0012/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0012/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0012/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0018",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 144.0,
+    "end_s": 152.0,
+    "scene": "A warehouse aisle with shelving on both sides, a forklift moving towards a loading dock, and workers in high-visibility vests and hard hats.",
+    "activity": "A forklift approaches a loading dock while workers inspect a stack of boxes, with the forklift's load being raised and lowered during the sequence.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 3,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift raises a stack of boxes, which appears unstable and overhangs the forks, potentially obstructing the operator's view.",
+        "evidence": "Frames 3 and 4 show the forklift's load being raised, with the top boxes visibly overhanging the forks and the operator's view partially blocked.",
+        "confidence": 0.85
+      },
+      {
+        "type": "missing_ppe",
+        "description": "A worker is seen without a hard hat while inspecting the boxes near the forklift.",
+        "evidence": "In Frame 1, a worker is visible without a hard hat, standing close to the forklift's path.",
+        "confidence": 0.7
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0018/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0018/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0018/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0018/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0024",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 192.0,
+    "end_s": 200.0,
+    "scene": "A warehouse aisle with shelving on both sides, viewed from above, showing a person operating an orange forklift.",
+    "activity": "The forklift moves forward, and the operator turns to face the camera, then continues moving forward.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "The forklift operator is not wearing a hard hat or high-visibility vest, which are required in an active operating area.",
+        "evidence": "Frames 1-4 show the operator without a hard hat or high-visibility vest. The operator is seated in the forklift, which is moving through the aisle.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0024/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0024/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0024/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0024/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0030",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 240.0,
+    "end_s": 248.0,
+    "scene": "A warehouse aisle with orange shelving units on both sides, stocked with various items including boxes and plastic-wrapped pallets. The camera angle is from behind two individuals walking away from the camera down the aisle.",
+    "activity": "Two individuals walk down a warehouse aisle, one carrying a box. The aisle is flanked by tall shelving units loaded with goods. The individuals appear to be moving at a steady pace, and there is no visible industrial truck in the frames.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0030/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0030/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0030/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0030/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0036",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 288.0,
+    "end_s": 296.0,
+    "scene": "A warehouse aisle with shelving units stocked with green and white containers in the background. The camera angle is from the side of a forklift, focusing on the operator's area.",
+    "activity": "The forklift operator adjusts their position and looks around, with no significant movement of the forklift or changes in the environment across the frames.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "The forklift operator is not wearing a high-visibility vest or a hard hat, which are required in an active operating area.",
+        "evidence": "Frames 1-4 show the operator's upper body without any high-visibility clothing or head protection. The operator is seated in the forklift, which is stationary.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0036/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0036/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0036/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0036/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0042",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 336.0,
+    "end_s": 344.0,
+    "scene": "A static image of a safety training slide with a cartoon figure demonstrating a hand signal for raising or lowering tines.",
+    "activity": "No change in activity across frames; the image is static with no motion or interaction between people and equipment.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 1,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0042/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0042/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0042/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0042/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0048",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 384.0,
+    "end_s": 392.0,
+    "scene": "An animated figure demonstrating an emergency stop signal with arms outstretched, accompanied by text and directional arrows.",
+    "activity": "The figure's arms move in a circular motion to illustrate the emergency stop signal.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 1,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0048/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0048/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0048/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0048/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0054",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 432.0,
+    "end_s": 440.0,
+    "scene": "A warehouse aisle with shelving units on both sides and a forklift in the background, viewed from a fixed camera angle.",
+    "activity": "A worker in a high-visibility vest and hard hat walks past a stationary forklift, then turns and walks away from the camera's view.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A worker in the background is operating a forklift without wearing a hard hat or high-visibility vest.",
+        "evidence": "In frames 1 and 2, the forklift operator is visible in the background without a hard hat or high-visibility vest, while the worker in the foreground is properly equipped. The operator remains in the same position across these frames.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0054/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0054/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0054/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0054/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0060",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 480.0,
+    "end_s": 488.0,
+    "scene": "A warehouse aisle with tall shelving units on both sides, filled with boxes and pallets. The camera is positioned at ground level, looking down the aisle towards the back of the warehouse.",
+    "activity": "A forklift enters the frame from the back of the warehouse, moving forward along the aisle. The shelves on either side are densely packed with goods, and the forklift's path is clear of obstructions.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 0,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_operation",
+        "description": "The forklift is moving with its forks raised, and there is no operator visible in the frame. This suggests the forklift may be unattended and in operation.",
+        "evidence": "In frames 1-4, the forklift is visible moving forward with its forks raised. There is no operator in the driver's seat or visible in the surrounding area. The forklift is the only moving object in the frames.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0060/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0060/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0060/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0060/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0066",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 528.0,
+    "end_s": 536.0,
+    "scene": "A presentation slide with a title and a photograph of a forklift operator in a warehouse.",
+    "activity": "The slide remains static with no changes between frames.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0066/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0066/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0066/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0066/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0072",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 576.0,
+    "end_s": 584.0,
+    "scene": "A warehouse aisle with tall metal shelving units on both sides, filled with stacked cardboard boxes. A forklift is visible in the center of the aisle, carrying a load of boxes.",
+    "activity": "The forklift moves forward, carrying a load of boxes, while the camera captures the movement from a fixed position.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 0,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift is carrying a load of boxes that appears to be overhanging the forks, potentially obstructing the operator's view.",
+        "evidence": "In frames 1, 2, 3, and 4, the load of boxes is visibly higher than the forks, and the operator's view is partially blocked by the load. The forklift is moving forward in all frames.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0072/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0072/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0072/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0072/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "fz9Q7-7l-40_0078",
+    "video_id": "fz9Q7-7l-40",
+    "start_s": 624.0,
+    "end_s": 632.0,
+    "scene": "A warehouse aisle with shelving units on both sides, a forklift in the center, and several workers in the vicinity.",
+    "activity": "A worker in a high-visibility vest is seen signaling to a forklift operator, who then moves the forklift forward.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 5,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A worker in a high-visibility vest is standing in the path of the forklift, which is moving towards them.",
+        "evidence": "In frame 4, the worker is directly in front of the forklift, which is moving forward. The worker is approximately one truck-length away from the forklift's front.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0078/f01.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0078/f02.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0078/f03.jpg",
+      "data/chunks/fz9Q7-7l-40/fz9Q7-7l-40_0078/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0000",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "scene": "A plain dark background with white text describing the Workers' Compensation Board of British Columbia.",
+    "activity": "No change in content across the frames; static text remains constant.",
+    "is_camera_footage": false,
+    "frame_content": "slide",
+    "people_count": 0,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0000/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0000/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0000/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0000/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0006",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 48.0,
+    "end_s": 56.0,
+    "scene": "A warehouse setting with a forklift in motion, viewed from a fixed camera angle. The footage captures the forklift's movement and the operator's actions within the vehicle.",
+    "activity": "The forklift moves forward, and the operator adjusts their position and focus while driving.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "The operator is not wearing a hard hat, which is required in an active operating area.",
+        "evidence": "Frames 2, 3, and 4 show the operator's head without a hard hat. The operator is inside the forklift, which is in motion, indicating an active operating area.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0006/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0006/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0006/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0006/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0012",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 96.0,
+    "end_s": 104.0,
+    "scene": "A warehouse with a forklift and workers in high-visibility vests, standing on a wet surface with caution tape visible in the background.",
+    "activity": "Two workers in high-visibility vests are conversing and gesturing near a stationary forklift, with one worker turning away from the truck's path.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A worker in the background, partially obscured, is not wearing a hard hat while standing near the forklift.",
+        "evidence": "Frame 2: A worker in the background, near the forklift, is not wearing a hard hat. The worker is standing close to the truck's operating area.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0012/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0012/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0012/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0012/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0018",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 144.0,
+    "end_s": 152.0,
+    "scene": "A warehouse parking area with vehicles and industrial equipment, viewed from a fixed camera angle.",
+    "activity": "A white van moves from the background into the foreground, passing near a stationary truck with an open bed.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A person in an active operating area without required high-visibility clothing or head protection.",
+        "evidence": "Frame 3: A person wearing a red hard hat and high-visibility vest is visible in the foreground, but no other individuals are present in the active area. The van is moving through the area, indicating it is an active operating zone.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0018/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0018/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0018/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0018/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0024",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 192.0,
+    "end_s": 200.0,
+    "scene": "A warehouse with stacks of pallets and a person in a high-visibility vest walking near the stacks.",
+    "activity": "A person in a high-visibility vest walks past stacks of pallets, then turns to face the camera.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A person in an active operating area without required high-visibility clothing or head protection.",
+        "evidence": "Frame 1: Person wearing a high-visibility vest but no hard hat. Frame 2: Person still without a hard hat. Frame 3: Person wearing a hard hat. Frame 4: Person still wearing a hard hat. The person is in an area with stacks of pallets, indicating an active operating area.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0024/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0024/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0024/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0024/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0030",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 240.0,
+    "end_s": 248.0,
+    "scene": "A warehouse aisle with stacks of materials on either side, viewed from a fixed camera angle. The camera is positioned near a doorway, capturing the entrance to the aisle.",
+    "activity": "A person wearing a green hard hat and high-visibility vest walks from the right side of the frame towards the left, passing in front of a stationary forklift. The forklift's forks are raised, and the operator is visible in the driver's seat.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A person is walking in the aisle without wearing a hard hat or high-visibility vest, which are required in this area.",
+        "evidence": "Frame 3 shows a person walking in the aisle without a hard hat or high-visibility vest. The person is wearing a black shirt and is walking towards the forklift. The forklift is stationary, and the person is walking past it.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0030/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0030/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0030/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0030/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0036",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 288.0,
+    "end_s": 296.0,
+    "scene": "A warehouse with stacks of wooden planks and a forklift in operation, viewed from a fixed camera angle.",
+    "activity": "A person walks across the path of a moving forklift carrying a load of wooden planks, while another individual stands near the forklift.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person on foot walks directly into the path of a moving forklift carrying a load of wooden planks. The pedestrian is close enough that the forklift could not stop short of them.",
+        "evidence": "In frame 4, a person is seen walking across the path of the forklift, which is moving from left to right. The pedestrian is approximately one truck-length away from the forklift's front, and the forklift is in motion.",
+        "confidence": 0.95
+      },
+      {
+        "type": "missing_ppe",
+        "description": "A person standing near the forklift is not wearing high-visibility clothing or a hard hat, despite being in an active operating area.",
+        "evidence": "In frames 1-3, a person is visible standing near the forklift, wearing a dark jacket and no high-visibility vest or hard hat. The area is active with forklift operations.",
+        "confidence": 0.85
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0036/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0036/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0036/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0036/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0042",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 336.0,
+    "end_s": 344.0,
+    "scene": "A warehouse aisle with yellow safety-striped columns and a forklift in motion, viewed from a fixed camera angle.",
+    "activity": "A person in a blue jacket and safety vest is seen walking alongside a moving forklift, maintaining a close distance to the vehicle.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A person in a blue jacket and safety vest is walking in the path of a moving forklift, maintaining a close distance that could prevent the forklift from stopping in time.",
+        "evidence": "Frames 2-4 show the person walking parallel to the forklift's path, approximately one truck-length behind the vehicle, with the forklift's forks raised and in motion.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0042/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0042/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0042/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0042/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0048",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 384.0,
+    "end_s": 392.0,
+    "scene": "A warehouse aisle with stacks of wooden pallets on either side, viewed from a fixed camera angle. The aisle is marked with yellow lines, and there is a yellow and black striped barrier visible in the background.",
+    "activity": "Two men walk down the aisle, one leading and the other following. The leading man stops and turns to face the camera, while the following man continues walking. A forklift is seen moving in the background, carrying a load of pallets.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "The leading man stops in the path of the forklift, which is moving towards him. The forklift is approximately two truck-lengths behind him, and he is standing in the middle of the aisle, directly in its path.",
+        "evidence": "In frame 2, the forklift is visible in the background, moving towards the leading man who is standing in the aisle. In frame 3, the leading man is still in the aisle, and the forklift is closer, indicating it is moving towards him.",
+        "confidence": 0.9
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0048/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0048/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0048/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0048/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0054",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 432.0,
+    "end_s": 440.0,
+    "scene": "A man in a warehouse wearing a red hard hat and high-visibility vest is standing and speaking, with industrial equipment in the background.",
+    "activity": "The man's facial expressions and mouth movements change as he speaks, indicating he is talking throughout the sequence.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": false,
+    "truck_moving": null,
+    "candidates": [],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0054/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0054/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0054/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0054/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0060",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 480.0,
+    "end_s": 488.0,
+    "scene": "A forklift is seen in an outdoor industrial area with stacks of lumber in the background, moving forward on a paved surface.",
+    "activity": "The forklift moves forward, carrying a load of lumber, and the camera zooms in on a warning sign on the ground.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 0,
+    "truck_present": true,
+    "truck_moving": true,
+    "candidates": [
+      {
+        "type": "unsafe_load",
+        "description": "The forklift is carrying a load of lumber that appears to be overhanging the forks, potentially obstructing the operator's view.",
+        "evidence": "Frames 1-3 show the forklift moving with a load that extends beyond the forks, and the operator's cabin is not visible due to the load's height.",
+        "confidence": 0.85
+      },
+      {
+        "type": "blocked_egress",
+        "description": "The camera zooms in on a 'STOP LOOK LISTEN' sign, which could be an egress route or safety instruction area, but there is no clear evidence of obstruction by material.",
+        "evidence": "Frame 4 shows the sign, but there is no material blocking it; the sign is on the ground and not obstructed by any visible objects.",
+        "confidence": 0.2
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0060/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0060/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0060/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0060/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0066",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 528.0,
+    "end_s": 536.0,
+    "scene": "A warehouse environment with industrial equipment, safety barriers, and workers in protective gear. The camera captures a sequence of events involving a worker and a forklift.",
+    "activity": "A worker in a yellow jacket walks across the frame, followed by a worker in a red vest and orange high-visibility vest gesturing while standing near a forklift. The forklift moves slightly between frames.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": null,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "A worker in a red vest and orange high-visibility vest is standing near a forklift without a hard hat, in an area where powered equipment is operating.",
+        "evidence": "Frame 3: The worker in the red vest is visible without a hard hat, standing near the forklift. The forklift is stationary but in an active operating area.",
+        "confidence": 0.8
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0066/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0066/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0066/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0066/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0072",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 576.0,
+    "end_s": 584.0,
+    "scene": "A warehouse with wooden pallets and a forklift in operation, viewed from a fixed camera angle.",
+    "activity": "A man in a high-visibility vest walks across the frame from left to right, passing in front of a stationary forklift.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 2,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "pedestrian_in_path",
+        "description": "A man in a high-visibility vest walks directly in front of a stationary forklift. The forklift's front is facing the camera, and the man crosses its path at a distance of approximately one truck length.",
+        "evidence": "Frame 1: Man begins walking. Frame 2: Man is mid-stride, closer to the forklift. Frame 3: Man is near the forklift's front. Frame 4: Man has passed the forklift. The forklift remains stationary throughout.",
+        "confidence": 0.95
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0072/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0072/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0072/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0072/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  },
+  {
+    "chunk_id": "4p2vg_IbmKY_0078",
+    "video_id": "4p2vg_IbmKY",
+    "start_s": 624.0,
+    "end_s": 632.0,
+    "scene": "A warehouse parking area with yellow safety stripes on the ground, a red forklift parked in the background, and a person walking in the foreground.",
+    "activity": "A person in safety gear walks across the frame from right to left, passing near a stationary forklift.",
+    "is_camera_footage": true,
+    "frame_content": "footage",
+    "people_count": 1,
+    "truck_present": true,
+    "truck_moving": false,
+    "candidates": [
+      {
+        "type": "missing_ppe",
+        "description": "The person is wearing a hard hat and high-visibility vest, so no missing PPE is observed.",
+        "evidence": "All frames show the person fully equipped with safety gear, including a hard hat and high-visibility vest.",
+        "confidence": 0.0
+      },
+      {
+        "type": "pedestrian_in_path",
+        "description": "The person is walking in the path of the forklift, but the forklift is stationary and not moving towards the person.",
+        "evidence": "The forklift remains stationary throughout the frames, and the person walks past it without any indication of the forklift moving towards them.",
+        "confidence": 0.0
+      },
+      {
+        "type": "unsafe_load",
+        "description": "No load is visible on the forklift, and there is no evidence of unsafe load handling.",
+        "evidence": "The forklift's forks are not raised, and there is no load present in any of the frames.",
+        "confidence": 0.0
+      },
+      {
+        "type": "blocked_egress",
+        "description": "No exit routes or safety devices are visible in the frames, so no obstruction can be determined.",
+        "evidence": "The frames do not show any exit doors, signs, or safety devices that could be obstructed.",
+        "confidence": 0.0
+      },
+      {
+        "type": "unsafe_operation",
+        "description": "No unauthorised rider, person under raised forks, unattended running truck, or riding on the forks is observed.",
+        "evidence": "The forklift is unoccupied and stationary, and there are no other individuals on or near the forklift.",
+        "confidence": 0.0
+      }
+    ],
+    "frame_paths": [
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0078/f01.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0078/f02.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0078/f03.jpg",
+      "data/chunks/4p2vg_IbmKY/4p2vg_IbmKY_0078/f04.jpg"
+    ],
+    "model": "nvidia/nemotron-nano-12b-v2-vl",
+    "error": ""
+  }
+]

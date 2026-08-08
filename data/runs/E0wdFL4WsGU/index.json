@@ -1,0 +1,55 @@
+[
+  {
+    "chunk_id": "E0wdFL4WsGU_0000",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 0.0,
+    "end_s": 8.0,
+    "caption": "A black background with white text describing warehouse pedestrian safety protocols. The text changes across the frames, emphasizing different safety messages.",
+    "hazards": [],
+    "is_camera_footage": false
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0001",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 8.0,
+    "end_s": 16.0,
+    "caption": "An indoor warehouse with a person operating a yellow forklift in a spacious area with gray walls, an open door, and safety banners on the wall. The forklift operator raises the forks and then lowers them back to the ground. unsafe_load: The forklift operator raises the forks while the truck is stationary, but there is no evidence of travel with forks elevated, visible tilt, or obstruction of the operator's view.",
+    "hazards": [
+      "unsafe_load"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0002",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 16.0,
+    "end_s": 24.0,
+    "caption": "An indoor warehouse with a yellow forklift in the center, a person operating it, and an open doorway leading to another area. The floor is white and reflective, and there are chairs and a desk in the background. The forklift operator raises the forks, lifts a load, and then lowers it back to the ground. unsafe_load: The forklift operator raises the forks with a load, which is visibly unstable and overhangs the forks, potentially obstructing the operator's view.",
+    "hazards": [
+      "unsafe_load"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0003",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 24.0,
+    "end_s": 32.0,
+    "caption": "An indoor warehouse setting with a forklift operator driving a yellow CAT forklift. The operator is wearing a black shirt and a face mask. A woman in a dark jacket and jeans is walking in the background. The warehouse has gray walls, a white floor, and various signs and equipment in the background. The forklift operator is driving the forklift while the woman walks past the vehicle. The forklift remains stationary throughout the sequence. pedestrian_in_path: A woman in a dark jacket and jeans is walking in the path of a stationary forklift. The forklift is not moving, but the woman is walking close to it.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  },
+  {
+    "chunk_id": "E0wdFL4WsGU_0004",
+    "video_id": "E0wdFL4WsGU",
+    "start_s": 32.0,
+    "end_s": 38.38,
+    "caption": "An indoor warehouse with a forklift operator driving a yellow forklift, a pedestrian walking in the background, and safety signage on the walls. A pedestrian walks from the background toward the forklift's path as the forklift moves forward. pedestrian_in_path: A pedestrian is walking into the path of a moving forklift. The pedestrian is behind the forklift in the first frame and moves closer to the forklift's front in the second frame, entering the truck's path by the third frame.",
+    "hazards": [
+      "pedestrian_in_path"
+    ],
+    "is_camera_footage": true
+  }
+]
