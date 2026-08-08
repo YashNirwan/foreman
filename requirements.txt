@@ -1,0 +1,6 @@
+# Streamlit Community Cloud installs from this file.
+# Local development uses pyproject.toml (pip install -e .).
+requests>=2.31
+numpy>=1.26
+pillow>=10.0
+streamlit>=1.36

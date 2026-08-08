@@ -10,6 +10,7 @@ did anything happen that the taxonomy does not cover.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -17,6 +18,16 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
+
+# On Streamlit Community Cloud the key arrives via st.secrets rather than the
+# environment. Bridging it here keeps foreman.nim free of any Streamlit import, so the
+# pipeline, the MCP server and the eval harness stay runnable without it.
+if "NVIDIA_API_KEY" not in os.environ:
+    try:
+        if "NVIDIA_API_KEY" in st.secrets:
+            os.environ["NVIDIA_API_KEY"] = st.secrets["NVIDIA_API_KEY"]
+    except Exception:  # noqa: BLE001 - no secrets file locally is normal
+        pass
 
 from foreman import verify  # noqa: E402
 from foreman.hazards import BY_KEY  # noqa: E402
@@ -122,7 +133,15 @@ with tab_queue:
             if clip.exists():
                 st.video(str(clip))
             else:
-                st.caption("clip not rendered")
+                # Expected on the hosted demo. The clips are excerpts of third-party
+                # training footage, so they are cut locally and never committed; see
+                # DATA.md. Saying so beats an empty box that reads as a bug.
+                st.info(
+                    "Evidence clip available when run locally.\n\n"
+                    "Clips are cut from third-party footage that this repo does not "
+                    "redistribute. `python scripts/fetch_data.py` then re-run the "
+                    "pipeline to see them."
+                )
         with right:
             st.markdown(f"**Why this was confirmed** — {a['rationale']}")
             with st.expander("Evidence chain"):
@@ -145,9 +164,18 @@ with tab_search:
         placeholder="someone walking near a moving forklift",
     )
     if q:
-        with st.spinner("searching"):
-            idx = TimelineIndex.load(RUNS / video_id / "index")
-            hits = idx.search(q, k=8)
+        try:
+            with st.spinner("searching"):
+                idx = TimelineIndex.load(RUNS / video_id / "index")
+                hits = idx.search(q, k=8)
+        except Exception as exc:  # noqa: BLE001
+            # Search is the one tab that calls out at request time, so it is also the
+            # one that can fail in front of a visitor. Name the cause rather than
+            # dumping a stack trace.
+            st.error(
+                f"Search needs a live NVIDIA NIM key to embed the query. {exc}"
+            )
+            hits = []
         for h in hits:
             st.markdown(
                 f"**{ts(h.start_s)}–{ts(h.end_s)}** &nbsp; "

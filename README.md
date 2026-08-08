@@ -7,7 +7,10 @@ each one carrying the evidence it was confirmed on and the standard it maps to, 
 searchable index of everything else it saw. It runs on NVIDIA-hosted NIM endpoints, so
 it reproduces on a laptop with an API key and no GPU.
 
-![Alert queue](assets/alert-queue.png)
+![Foreman review console: alert queue, evidence chain, search, and audit](assets/tour.gif)
+
+*The review console: verified alerts with the evidence each was confirmed on, natural
+language search across every window, and an audit view of everything suppressed.*
 
 ---
 

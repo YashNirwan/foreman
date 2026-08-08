@@ -25,3 +25,5 @@ data/runs/**/clips/
 *.egg-info/
 build/
 dist/
+
+.streamlit/secrets.toml
