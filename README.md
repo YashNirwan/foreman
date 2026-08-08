@@ -7,6 +7,10 @@ each one carrying the evidence it was confirmed on and the standard it maps to, 
 searchable index of everything else it saw. It runs on NVIDIA-hosted NIM endpoints, so
 it reproduces on a laptop with an API key and no GPU.
 
+**[Live demo](https://foreman-safety.streamlit.app)** · analysis of a real run, no setup
+required. Evidence clips are local-only there, for the licensing reason in
+[DATA.md](DATA.md).
+
 ![Foreman review console: alert queue, evidence chain, search, and audit](assets/tour.gif)
 
 *The review console: verified alerts with the evidence each was confirmed on, natural
